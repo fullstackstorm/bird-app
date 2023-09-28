@@ -1,10 +1,10 @@
 import os
 
-from flask import Flask, jsonify, make_response
+from flask import Flask, jsonify, make_response, Blueprint
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
-from config import app, db, api
-from models import Bird
+from .config import app, db, api
+from .models import Bird
 
 class Birds(Resource):
 

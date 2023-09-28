@@ -1,5 +1,5 @@
-from config import app
-from models import db, Bird
+from .config import app
+from .models import db, Bird
 
 with app.app_context():
 
